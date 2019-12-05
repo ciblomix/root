@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>Ciblomix</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+@media (max-width: 2560px) {
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+
+	body {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	
+	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
+
+	img,
+	table,
+	td,
+	blockquote,
+	code,
+	pre,
+	textarea,
+	input,
+	iframe,
+	object,
+	embed,
+	video {
+		max-width: 100%;
+	}
+	
+	/* conserver le ratio des images */
+
+	img {
+		height: auto;
+	}
+	
+	/* gestion des mots longs */
+
+	textarea,
+	table,
+	td,
+	th,
+	code,
+	pre,
+	samp {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+	
+	code,
+	pre,
+	samp {
+		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
+	}
+	
+	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
+
+	.element1,
+	.element2 {
+		float: none;
+		width: auto;
+	}
+
+	/* masquer les éléments superflus */
+
+	.hide_mobile {
+		display: none !important;
+	}
+
+	
+	body{
+	background:#AEE4FF;
+}
+	h1{
+	background:#e3f2fd;
+}	
+	
+	
+	
+.form-style-1 {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style-1 label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;	
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+	width: 49%;
+}
+
+.form-style-1 .field-long{
+	width: 100%;
+}
+.form-style-1 .field-select{
+	width: 100%;
+}
+.form-style-1 .field-textarea{
+	height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+.form-style-1 input[type=submit], .form-style-1 input[type=reset]{
+	background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=reset]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.form-style-1 .required{
+	color:red;
+}
+
+
+</style>
+
+
+
+
+</head>
+<body>
+<center><h1>CIBLOMIX: biomedical AI</h1></center>
+<img src="logo.png"> 
+
+<form name="Ciblomix">
+<h4>Synopsis</h4>
+<br>Modern science and medicine are generating increasingly massive data.<br/>
+
+<h4>References</h4>
+<br>1/Desterke C, Martinaud C, Ruzehaji N, Le Bousse-Kerdilès MC. Inflammation as a 
+Keystone of Bone Marrow Stroma Alterations in Primary Myelofibrosis. Mediators
+Inflamm. 2015;2015:415024. doi: 10.1155/2015/415024. Epub 2015 Nov 12. Review.
+PubMed PMID: 26640324; PubMed Central PMCID: PMC4660030.</br>
+
+<br>2/Christophe Desterke, Ludovic Marie-Sainte, Amine Sbitti, Ali Naama2, 
+Annelise Bennaceur-Griscelli, Ali G Turhan and Ivan Sloma: ASH2015: A Bio-Integrative 
+Approach Identifies an Inflammatory Signature in Chronic Myeloid Leukemia (CML) 
+Stem Cells That Is Highly Perturbed in CML Blast Crisis and Involves REL transcription Factor.</br>
+
+<br>3/Desterke C, Slim R, Candelier JJ. A bioinformatics transcriptome meta-analysis
+highlights the importance of trophoblast differentiation in the pathology of
+hydatidiform moles. Placenta. 2018 May;65:29-36. doi:
+10.1016/j.placenta.2018.04.002. Epub 2018 Apr 7. PubMed PMID: 29908639.</br>
+<br>4/Desterke C, Chiappini F. Lipid Related Genes Altered in NASH Connect
+Inflammation in Liver Pathogenesis Progression to HCC: A Canonical Pathway. Int J
+Mol Sci. 2019 Nov 8;20(22). pii: E5594. doi: 10.3390/ijms20225594. PubMed PMID:
+31717414.</br>
+
+<h4>contact : ciblomix@gmail.com</h4>
+
+
+
+
+
+
+</form>
+<script language="JavaScript">
+var today = new Date()
+document.write(today)
+</script>
+</body>
+</html>
